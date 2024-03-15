@@ -1,0 +1,68 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    border: none
+    outline: none
+
+$prime: #762aa5
+$second: #000
+
+html
+    scroll-behavior: smooth
+
+body
+    min-height: 100vh
+    color: white
+    background-color: #000
+    font-family: 'RubikSprayPaint', sans-serif
+    background-image: url('../img/bg.jpg')
+    background-repeat: no-repeat
+    background-position: center top
+    background-size: cover
+
+    &.active
+        overflow: hidden
+
+img
+    max-width: 100%
+
+a,
+button
+    display: inline-block
+    text-decoration: none
+    transition: all ease .2s
+    background-color: transparent
+    &:active
+        transform: scale(.98)
+
+    img
+        display: block
+
+.btn
+
+    display: block
+    font-size: 0
+    max-width: 320px
+    position: relative
+    z-index: 1
+
+    img
+        display: block
+
+    &.img
+        padding-right: 100px 
+        width: 28vw
+        max-width: 420px
+
+    &__side
+        position: absolute
+        top: 50%
+        transform: translateY(-55%)
+        max-height: 148%
+        right: 0
+
+.fx
+    display: flex
+    align-items: center
+    justify-content: space-between

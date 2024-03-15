@@ -1,0 +1,51 @@
+@import 'normolize'
+// @import 'fonts'
+@import 'elements'
+@import 'header'
+
+.main
+    width: 100%
+    position: relative
+    z-index: 1
+    min-height: 100vh
+    min-height: 100lvh
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: center
+    text-align: center
+
+    .content
+        margin: auto
+        width: 100%
+
+        .btn
+            max-width: 20vw
+            margin: 0 auto 20px
+
+    &__img
+        display: block
+        margin: 0 auto
+        width: 100%
+
+    h1
+        max-width: 40vw
+        position: relative
+        top: 40px
+        margin: 0 auto
+
+.partners
+    width: 100%
+    position: absolute
+    bottom: 10vw
+    padding: 40px 4vw 0
+    &__heading
+        width: 30vw
+
+    a
+        max-width: 22%
+        display: block
+        img
+            max-height: 4vw
+            object-fit: contain
+            object-position: center center
