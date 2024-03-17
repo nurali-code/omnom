@@ -112,22 +112,35 @@
             max-height: 7vw
 
     &-footer
-        // background-color: red
-        padding: 100px 5vw 10px
+        padding: 100px 5vw 50px
         display: flex
         align-items: flex-end
         justify-content: space-between
-        background-repeat: no-repeat
-        background-position: top 65% center
-        background-size: 100% auto
-        background-image: url('../img/ovl.png')
+        // background-color: red
+        // background-repeat: no-repeat
+        // background-position: top 65% center
+        // background-size: 100% auto
+        // background-image: url('../img/ovl.png')
+
+        position: absolute
+        bottom: 0
+        width: 100%
+        left: 0
 
     &__a
-        max-width: 10vw
+        max-width: 14vw
 
     &__b
-        max-width: 38vw
+        max-width: 42vw
 
     &__c
         margin-bottom: 1vw
-        max-width: 14vw
+        max-width: 18vw
+
+footer 
+    position: relative
+    z-index: 1
+    overflow: hidden
+    img 
+        display: block
+        width: 100%
