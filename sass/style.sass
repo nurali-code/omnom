@@ -5,6 +5,7 @@
 
 .main
     width: 100%
+    overflow: hidden
     position: relative
     z-index: 1
     min-height: 100vh
@@ -49,3 +50,84 @@
             max-height: 4vw
             object-fit: contain
             object-position: center center
+
+    &__anim
+        position: absolute
+        bottom: 125%
+        max-width: 25vw
+        left: -2%
+
+.tkn
+    padding: 80px 0 0
+    overflow: hidden
+    .h1
+        max-width: 27vw
+        margin: 0 auto
+        display: block
+
+    &__heading
+        position: relative
+        top: -30px
+        max-width: 22vw
+        display: block
+        margin: 0 auto 30px
+
+    .wrap
+        padding: 0 20px
+        display: flex
+        align-items: flex-start
+        justify-content: center
+
+    .item
+        width: 24%
+        position: relative
+        z-index: 1
+        img
+            display: block
+
+        &__img
+            max-width: 50%
+            right: 5%
+            margin: 0 auto 30px
+            position: relative
+            &.fire
+                position: absolute
+                top: -23%
+                max-width: 60%
+                left: 50%
+                z-index: -1
+                transform: translateX(-50%)
+
+        &__gr
+            position: absolute
+            top: 39%
+            width: 137%
+            z-index: -11
+            max-width: unset
+            right: 0
+
+        &__heading
+            width: unset !important
+            height: 120px
+            max-height: 7vw
+
+    &-footer
+        // background-color: red
+        padding: 100px 5vw 10px
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        background-repeat: no-repeat
+        background-position: top 65% center
+        background-size: 100% auto
+        background-image: url('../img/ovl.png')
+
+    &__a
+        max-width: 10vw
+
+    &__b
+        max-width: 38vw
+
+    &__c
+        margin-bottom: 1vw
+        max-width: 14vw
