@@ -36,7 +36,29 @@
         margin: 0 auto
 
     @media screen and ( max-width: 1000px )
-        display: none
+        // display: none
+        h1
+            top: 20px
+
+        &__img
+            max-width: unset
+            width: 110%
+            position: relative
+            left: -5%
+
+    @media screen and ( max-width: 700px )
+        &__img
+            width: 170%
+            left: -35%
+
+        h1
+            max-width: 82vw
+
+        .content
+            .btn
+                width: 200px
+                max-width: 50vw
+                margin-bottom: 10vw
 
 .partners
     width: 100%
@@ -59,6 +81,42 @@
         bottom: 125%
         max-width: 25vw
         left: -2%
+
+    @media screen and ( max-width: 1000px )
+        bottom: 12vw
+        &__anim
+            // display: none
+            bottom: 107%
+
+        &-wrap
+            flex-wrap: wrap
+            justify-content: center
+            gap: 3vw
+
+        a
+            width: fit-content
+            max-width: fit-content
+            img
+                display: block
+
+    @media screen and ( max-width: 700px )
+        bottom: 9vw
+        &__anim 
+            max-width: 39vw
+
+        &__heading 
+            width: 50vw
+
+        &-wrap
+            gap: 3vw 7vw
+
+        a 
+            width: 35%
+            max-width: unset
+
+            img 
+                max-height: 7vw
+                margin: 0 auto 
 
 .tkn
     padding: 80px 0 0
@@ -158,39 +216,55 @@
         .item
             width: 34%
             &__img
-                margin-bottom: 18vw
-                width: 34vw
-                height: 34vw
-            &__gr
-                top: 41%
+                margin-bottom: 6vw
+                // width: 34vw
+                // height: 34vw
 
-            &__heading 
+            &__gr
+                top: 29%
+
+            &__heading
                 max-height: unset
                 height: 90px
 
             &:nth-child(3),
             &:nth-child(4)
-                .item__img 
-                    margin-bottom: 14vw
+                .item__img
+                    margin-bottom: 5vw
+
+                .item__gr
+                    top: 25%
+
+    @media screen and ( max-width: 700px )
+        padding: 40px 0
+        .h1
+            max-width: 70vw
+
+        &__heading
+            max-width: 44vw
+            margin-bottom: 10px
+
+        .item
+            width: 85%
+            margin-bottom: 5vw
+            &__gr
+                top: 42%
+
+            &__img
+                margin-bottom: 14vw
+                width: 34vw
+                height: 34vw
+
+            &:nth-child(3),
+            &:nth-child(4)
+                .item__img
+                    margin-bottom: 10vw
 
                 .item__gr
                     top: 37%
 
-    @media screen and ( max-width: 700px )
-        .h1 
-            max-width: 76vw
-
-        &__heading
-            max-width: 47vw
-
-        .item
-            width: 100%
-            margin-bottom: 5vw
-
-        &-footer 
+        &-footer
             display: none
-
-
 
 footer
     position: relative
